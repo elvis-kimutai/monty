@@ -1,18 +1,10 @@
->,         Read first input character and store it in the current cell.
->,         Read second input character and store it in the next cell.
 
-<          Move the pointer back to the previous cell.
+read no (ascii - 48) into block #1
+>,-----------------------------------------------
+read no (ascii - 48 ('0')) into block #2
+>,-----------------------------------------------
 
-[->+<]     Copy the value from the current cell to the next cell, while clearing the current cell.
-
-++++++++   Increase the current cell value by 8 (ASCII value of '+' is 43).
-
-[          Start a loop that will repeat until the current cell value is zero.
-
->------    Move to the next cell and decrease its value by 6 (ASCII value of '-' is 45).
-
-<-         Move back to the previous cell.
-
-]          End the loop.
-
->.         Output the character represented by the current cell value (should be 'A' since its ASCII value is 65).
+[<<+>>-] add #2 to #0
+<[<+>-] add  #1 to #0
+<++++++++++++++++++++++++++++++++++++++++++++++++
+. print contents block #0

@@ -91,6 +91,14 @@ int main(int argc, char *argv[])
 	    {
 		    rotr(&stack);
 	    }
+	    /*else if (strcmp(token, "set_stack") == 0)
+	    {
+		   set_stack(&stack);
+	    }*/
+	    else if (strcmp(token, "queue") == 0)
+	    {
+		    queue(&stack);
+	    }
 	    else
             {
                 fprintf(stderr, "L%u: unknown instruction %s\n", line_number, token);

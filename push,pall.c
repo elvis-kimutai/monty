@@ -1,13 +1,11 @@
 #include "monty.h"
 
 /*
- *push_opcode - pushes an element to the stack
- *
- *@stack: head of the linked list
- *@line_number: line number
- *Return: no return
- *
- **/
+ * push: pushes an element to the stack
+ * @head: head of the linked list
+ * @line_number:line number
+ * return: no return
+ */
 void push(stack_t **stack, unsigned int line_number)
 {
 	char *num;
@@ -26,7 +24,7 @@ void push(stack_t **stack, unsigned int line_number)
 		fprintf(stderr, "L%u: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
 	}
-	for (i=0; num[i] != '\0'; i++)
+	for (i = 0; num[i] != '\0'; i++)
 	{
 
 		if (!isdigit(num[i]) && num[i] != '-')
@@ -51,8 +49,8 @@ void push(stack_t **stack, unsigned int line_number)
 		(*stack)->prev = new_node;
 	*stack = new_node;
 }
-/**i
- *pall_opcode - prints all values on the stack
+/*
+ *pall:prints all values on the stack
  *
  *@stack: head of the linked list
  *@line_number: line numbers

@@ -24,6 +24,11 @@ int main(int argc, char *argv[])
     while (fgets(line, sizeof(line), file))
     {
         char *token = strtok(line, " \n");
+	if (line[0] == '#')
+	{
+		line_number++;
+		continue;
+	}
         if (token)
         {
             if (strcmp(token, "push") == 0)

@@ -59,5 +59,6 @@ void mul_op(stack_t **stack, unsigned int line_number);
 void mod_op(stack_t **stack, unsigned int line_number);
 void pchar(stack_t **stack, unsigned int line_number);
 void pstr(stack_t **stack);
+void rotl(stack_t **stack);
 
 #endif /* MONTY_H */

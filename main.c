@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 
 #define MAX_LINE_LENGTH 256
 int main(int argc, char *argv[])

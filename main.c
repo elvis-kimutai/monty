@@ -87,6 +87,10 @@ int main(int argc, char *argv[])
 	    {
 		    rotl(&stack);
 	    }
+	    else if (strcmp(token, "rotr") == 0)
+	    {
+		    rotr(&stack);
+	    }
 	    else
             {
                 fprintf(stderr, "L%u: unknown instruction %s\n", line_number, token);

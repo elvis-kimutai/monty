@@ -1,3 +1,5 @@
+#ifndef MONTY_H
+#define MONTY_H
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -51,3 +53,5 @@ void add(stack_t **stack, unsigned int line_number);
 void nop(stack_t **stack, unsigned int line_number);
 void swap(stack_t **stack, unsigned int line_number);
 void free_stack(stack_t **stack);
+void sub(stack_t **stack, unsigned int line_number);
+#endif /* MONTY_H */

@@ -58,6 +58,10 @@ int main(int argc, char *argv[])
             {
                 sub(&stack, line_number);
             }
+	    else if (strcmp(token, "div") == 0)
+	    {
+                div_op(&stack, line_number);
+            }
 	    else
             {
                 fprintf(stderr, "L%u: unknown instruction %s\n", line_number, token);

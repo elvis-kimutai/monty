@@ -75,6 +75,10 @@ int main(int argc, char *argv[])
 	    {
 		    mod_op(&stack, line_number);
 	    }
+	    else if (strcmp(token, "pchar") == 0)
+	    {
+		    pchar(&stack, line_number);
+	    }
 	    else
             {
                 fprintf(stderr, "L%u: unknown instruction %s\n", line_number, token);

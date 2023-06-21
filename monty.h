@@ -56,4 +56,5 @@ void free_stack(stack_t **stack);
 void sub(stack_t **stack, unsigned int line_number);
 void div_op(stack_t **stack, unsigned int line_number);
 void mul_op(stack_t **stack, unsigned int line_number);
+void mod_op(stack_t **stack, unsigned int line_number);
 #endif /* MONTY_H */

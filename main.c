@@ -66,6 +66,10 @@ int main(int argc, char *argv[])
 	    {
 		    mul_op(&stack, line_number);
 	    }
+	    else if (strcmp(token, "mod") == 0)
+	    {
+		    mod_op(&stack, line_number);
+	    }
 	    else
             {
                 fprintf(stderr, "L%u: unknown instruction %s\n", line_number, token);
